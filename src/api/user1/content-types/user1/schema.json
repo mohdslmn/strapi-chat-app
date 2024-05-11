@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user1s",
+  "info": {
+    "singularName": "user1",
+    "pluralName": "user1s",
+    "displayName": "User1",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    }
+  }
+}

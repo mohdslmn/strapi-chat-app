@@ -13,6 +13,7 @@
     "@strapi/plugin-cloud": "4.24.1",
     "@strapi/plugin-i18n": "4.24.1",
     "@strapi/plugin-users-permissions": "4.24.1",
+    "@strapi/provider-upload-cloudinary": "^4.24.2",
     "@strapi/strapi": "4.24.1",
     "axios": "^1.6.8",
     "pg": "8.8.0",

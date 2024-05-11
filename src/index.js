@@ -29,7 +29,7 @@ module.exports = {
           });
 
           try {
-            await axios.post("http://localhost:1337/api/active-users", {
+            await axios.post("https://localhost:1337/api/active-users", {
               data: { users: username }
             });
             socket.emit("roomData", { done: "true" });
@@ -54,7 +54,7 @@ module.exports = {
         };
 
         try {
-          await axios.post("http://localhost:1337/api/chat_messages", strapiData);
+          await axios.post("https://localhost:1337/api/chat_messages", strapiData);
           socket.broadcast.to("group").emit("message", {
             user: data.username,
             text: data.message,
@@ -68,7 +68,7 @@ module.exports = {
       socket.on("getMessages", async () => {
         try {
           // Changing the URL to match  Strapi API endpoint for fetching messages
-          const response = await axios.get("http://localhost:1337/api/chat_messages");
+          const response = await axios.get("https://localhost:1337/api/chat_messages");
           socket.emit("messages", response.data);
         } catch (error) {
           console.error("Error fetching messages:", error.message);

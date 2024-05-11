@@ -14,7 +14,7 @@ module.exports = [
         },
       },
     },
-  },,
+  },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
@@ -23,3 +23,4 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
+
